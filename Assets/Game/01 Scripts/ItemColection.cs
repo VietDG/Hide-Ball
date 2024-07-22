@@ -84,7 +84,7 @@ public class ItemColection : MonoBehaviour
         }
         else
         {
-            Debug.Log("Bi de len roi an cai con ca'");
+            Debug.Log("bi de len'");
         }
     }
 
@@ -94,14 +94,17 @@ public class ItemColection : MonoBehaviour
         {
             if (otherObj != obj)
             {
-                if (obj._ava.bounds.Intersects(otherObj._ava.bounds))
+                if (obj._boxColider.bounds.Intersects(otherObj._boxColider.bounds))
                 {
                     return true;
                 }
             }
         }
-
         return false;
+    }
+
+    void CheckOverLap()
+    {
     }
 
     public void Movement()
