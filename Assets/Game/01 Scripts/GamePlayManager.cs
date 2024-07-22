@@ -11,7 +11,6 @@ public class GamePlayManager : MonoBehaviour
     [Header("---------------------Tool-------------------------")]
     [SerializeField] int _level;
 
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
