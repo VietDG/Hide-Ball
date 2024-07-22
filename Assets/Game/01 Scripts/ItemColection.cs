@@ -50,12 +50,18 @@ public class ItemColection : MonoBehaviour
             this.gameObject.SetActive(false);
             GameController.Instance.isLose = true;
             _boxColider.isTrigger = false;
-            SetLose();
+            if (this.Type.Equals(TypeItem.Ball))
+            {
+                SetLose();
+            }
         }
-        if (collision.CompareTag("ostable"))
+        if (Type.Equals(TypeItem.Ball))
         {
-            _circleColider.isTrigger = false;
-            SetLose();
+            if (collision.CompareTag("ostable"))
+            {
+                _circleColider.isTrigger = false;
+                SetLose();
+            }
         }
     }
 

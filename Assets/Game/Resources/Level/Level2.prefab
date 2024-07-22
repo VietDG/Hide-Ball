@@ -342,7 +342,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2.29
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0.5
@@ -672,10 +672,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2.29
+  m_Mass: 2.5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.5
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -866,7 +866,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3972348141767342237, guid: 437ca561bd33c6046be193630fc2c539, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.585
+      value: 1.44
       objectReference: {fileID: 0}
     - target: {fileID: 3972348141767342237, guid: 437ca561bd33c6046be193630fc2c539, type: 3}
       propertyPath: m_LocalPosition.y
@@ -904,6 +904,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5338461153333050344, guid: 437ca561bd33c6046be193630fc2c539, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5338461153333050344, guid: 437ca561bd33c6046be193630fc2c539, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5338461153333050344, guid: 437ca561bd33c6046be193630fc2c539, type: 3}
+      propertyPath: m_GravityScale
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7320005675896774966, guid: 437ca561bd33c6046be193630fc2c539, type: 3}
       propertyPath: m_Name
       value: ThanhGoHinhChuNhat
@@ -926,6 +938,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3367249429526519330}
     m_Modifications:
+    - target: {fileID: 3804799910950364123, guid: 69fc951991f96db48bee1b2edffd1437, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3804799910950364123, guid: 69fc951991f96db48bee1b2edffd1437, type: 3}
       propertyPath: m_Material
       value: 
@@ -1056,6 +1072,10 @@ PrefabInstance:
     - target: {fileID: 8187606175444115819, guid: 562c1b259fad6c741b9ddbd7dc8ab56b, type: 3}
       propertyPath: m_Name
       value: ThanhNgangNgan
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142358745551681153, guid: 562c1b259fad6c741b9ddbd7dc8ab56b, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
