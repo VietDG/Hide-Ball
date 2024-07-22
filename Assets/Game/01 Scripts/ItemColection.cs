@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public enum TypeItem
 {
@@ -16,7 +17,7 @@ public enum TypeItem
 public class ItemColection : MonoBehaviour
 {
     [Header("REFERENCE")]
-    [SerializeField] SpriteRenderer _ava;
+    public SpriteRenderer _ava;
     [SerializeField] Sprite _hiddenAva;
 
     public PolygonCollider2D _boxColider;
@@ -35,6 +36,11 @@ public class ItemColection : MonoBehaviour
     private void Awake()
     {
         _rb = this.GetComponent<Rigidbody2D>();
+    }
+
+    private void Start()
+    {
+        _ava.DOFade(0.5f, 0);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -94,6 +100,7 @@ public class ItemColection : MonoBehaviour
 
     public void Movement()
     {
+        _ava.DOFade(1, 0.2f);
         SetLayer("ball");
         _rb.bodyType = RigidbodyType2D.Dynamic;
     }
